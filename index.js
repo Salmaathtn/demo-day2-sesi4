@@ -7,3 +7,4 @@ const tiger = new Animal("Harimau", "Karnivora", true, 100, 100);
 
 console.log(elephant)
 console.log(orangutan)
+console.log(tiger)

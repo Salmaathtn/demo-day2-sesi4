@@ -5,13 +5,15 @@ class Animal {
         this.food = food;
         this.canReproduce = canReproduce;
         this.energy = energy;
-        this.#age = age;
+        this.age = age;
+
+        this.#age = 20;
         
     }
 // di enkapsulasi Age nya, jd cuman bisa di read only access nya
 // yg lain bisa diedit (a.k.a name, food, dll)
-    get getAge (){
-        return this.#age
+    getAge (){
+        return this.#age;
     }
 
     // tell dont ask

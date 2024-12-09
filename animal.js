@@ -5,7 +5,7 @@ class Animal {
         this.food = food;
         this.canReproduce = canReproduce;
         this.energy = energy;
-        this.age = age;
+        this.#age = age;
         
     }
 // di enkapsulasi Age nya, jd cuman bisa di read only access nya
@@ -16,7 +16,8 @@ class Animal {
 
     // tell dont ask
     isAdult(){
-        return this.#age
+        return this.#age > 18;
+
     }
 
 }
